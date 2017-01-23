@@ -12,6 +12,12 @@
 		3510494D1E222A0800DA2ED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3510494B1E222A0800DA2ED0 /* Main.storyboard */; };
 		3510494F1E222A0800DA2ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3510494E1E222A0800DA2ED0 /* Assets.xcassets */; };
 		351049521E222A0800DA2ED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351049501E222A0800DA2ED0 /* LaunchScreen.storyboard */; };
+		3510495B1E222EB400DA2ED0 /* EmotionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510495A1E222EB400DA2ED0 /* EmotionViewViewController.swift */; };
+		3510495D1E22422E00DA2ED0 /* UIColor+category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3510495C1E22422E00DA2ED0 /* UIColor+category.swift */; };
+		3510495F1E22673900DA2ED0 /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3510495E1E22673900DA2ED0 /* Emoticons.bundle */; };
+		351049611E22684100DA2ED0 /* EmotionPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351049601E22684100DA2ED0 /* EmotionPackage.swift */; };
+		351D2A141E34F35A004CE543 /* EmoticonTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351D2A131E34F35A004CE543 /* EmoticonTextAttachment.swift */; };
+		351D2A161E350700004CE543 /* UITextView+category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351D2A151E350700004CE543 /* UITextView+category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		3510494E1E222A0800DA2ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		351049511E222A0800DA2ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		351049531E222A0800DA2ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3510495A1E222EB400DA2ED0 /* EmotionViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionViewViewController.swift; sourceTree = "<group>"; };
+		3510495C1E22422E00DA2ED0 /* UIColor+category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+category.swift"; sourceTree = "<group>"; };
+		3510495E1E22673900DA2ED0 /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
+		351049601E22684100DA2ED0 /* EmotionPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionPackage.swift; sourceTree = "<group>"; };
+		351D2A131E34F35A004CE543 /* EmoticonTextAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTextAttachment.swift; sourceTree = "<group>"; };
+		351D2A151E350700004CE543 /* UITextView+category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+category.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				351049471E222A0800DA2ED0 /* AppDelegate.swift */,
+				3510495C1E22422E00DA2ED0 /* UIColor+category.swift */,
+				351049591E222E7D00DA2ED0 /* EmotionView */,
 				351049491E222A0800DA2ED0 /* ViewController.swift */,
 				3510494B1E222A0800DA2ED0 /* Main.storyboard */,
 				3510494E1E222A0800DA2ED0 /* Assets.xcassets */,
@@ -62,6 +76,18 @@
 				351049531E222A0800DA2ED0 /* Info.plist */,
 			);
 			path = EmotionKeyboard;
+			sourceTree = "<group>";
+		};
+		351049591E222E7D00DA2ED0 /* EmotionView */ = {
+			isa = PBXGroup;
+			children = (
+				3510495E1E22673900DA2ED0 /* Emoticons.bundle */,
+				3510495A1E222EB400DA2ED0 /* EmotionViewViewController.swift */,
+				351049601E22684100DA2ED0 /* EmotionPackage.swift */,
+				351D2A131E34F35A004CE543 /* EmoticonTextAttachment.swift */,
+				351D2A151E350700004CE543 /* UITextView+category.swift */,
+			);
+			path = EmotionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				351049521E222A0800DA2ED0 /* LaunchScreen.storyboard in Resources */,
+				3510495F1E22673900DA2ED0 /* Emoticons.bundle in Resources */,
 				3510494F1E222A0800DA2ED0 /* Assets.xcassets in Resources */,
 				3510494D1E222A0800DA2ED0 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +166,11 @@
 			files = (
 				3510494A1E222A0800DA2ED0 /* ViewController.swift in Sources */,
 				351049481E222A0800DA2ED0 /* AppDelegate.swift in Sources */,
+				351049611E22684100DA2ED0 /* EmotionPackage.swift in Sources */,
+				351D2A141E34F35A004CE543 /* EmoticonTextAttachment.swift in Sources */,
+				3510495B1E222EB400DA2ED0 /* EmotionViewViewController.swift in Sources */,
+				351D2A161E350700004CE543 /* UITextView+category.swift in Sources */,
+				3510495D1E22422E00DA2ED0 /* UIColor+category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +334,7 @@
 				351049581E222A0800DA2ED0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
